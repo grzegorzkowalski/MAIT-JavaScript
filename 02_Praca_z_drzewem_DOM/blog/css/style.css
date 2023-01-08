@@ -1,0 +1,450 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Etap I - Nagłówek */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f3f3f3;
+  z-index: 60;
+}
+.navigation-menu {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.navigation-menu img,
+.navigation-menu ul {
+  margin: 0 auto;
+  display: block;
+}
+
+.navigation-menu ul  {
+	width: 60%;
+}
+
+.navigation-menu > img {
+  margin-top: 24px;
+  width: 262px;
+}
+.navigation-menu ul .dot {
+  margin-top: 35px;
+}
+.navigation-menu ul li {
+  width: fit-content;
+  float: left;
+  margin: 30px 20px;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+.navigation-menu ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Etap II - O mnie */
+
+.about-blog {
+  margin-top: 170px;
+  background-image: url(../img/mainBG.png);
+  color: #fff;
+  padding-bottom: 32%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-blog__content-title {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  padding: 200px 0 50px 0;
+  font-size: 37px;
+  font-weight: 700;
+}
+.about-blog img {
+  width: fit-content;
+  margin: 50px auto 100px auto;
+  display: block;
+}
+.about-blog__content--welcome {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.about-blog__content--welcome-picture {
+  background-image: url(../img/kowal.png);
+  width: 32%;
+  padding-bottom: 36%;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+}
+.about-blog__content--welcome-text {
+  overflow: hidden;
+  height: 100%;
+  float: left;
+  width: 65%;
+  margin-left: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+  line-height: 44px;
+}
+.about-blog__content--welcome-text p:first-child {
+  font-size: 33px;
+  line-height: 50px;
+  font-weight: 100;
+}
+
+/* Etap III - Pierwszy artykuł */
+
+.first-article {
+  max-width: 1160px;
+  margin: 80px auto;
+}
+.first-article__photo {
+  background-image: url(../img/mainArticlePhoto.png);
+  width: 32%;
+  padding-bottom: 36%;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+}
+.first-article__text {
+  overflow: hidden;
+  height: 100%;
+  float: left;
+  width: 65%;
+  margin-left: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+  line-height: 44px;
+  position: relative;
+}
+.first-article__text-date {
+  font-size: 15px;
+  font-weight: 700;
+}
+.first-article__text-title {
+  font-size: 33px;
+  margin-bottom: 25px;
+}
+
+.more-about-article a {
+  width: 50px;
+  height: 48px;
+  background-image: url(../img/arrowDown.png);
+  display: block;
+  float: right;
+  margin-right: 50px;
+}
+
+/* Etap IV - Lista artykułów */
+
+.more-articles-container {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 50px;
+}
+.more-articles {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.one-of-articles {
+  width: 47%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  background-color: #eaeaea;
+}
+.one-of-articles-photo {
+  width: 39%;
+  padding-bottom: 40%;
+  background-image: url(../img/moreArtPhoto.png);
+  float: left;
+}
+.one-of-articles-title {
+  overflow: hidden;
+  width: 50%;
+  margin: 14% auto;
+}
+.one-of-articles-title p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+  line-height: 30px;
+}
+.more-articles-arrows {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Etap V - Artykuł promocyjny */
+
+.promo-article {
+  max-width: 980px;
+  margin: 80px auto;
+}
+.promo-article p {
+  font-family: 'Poppins', sans-serif;
+}
+.promo-article p:first-child {
+  font-size: 40px;
+}
+.promo-article-date {
+  font-weight: 700;
+  margin: 50px auto 80px auto;
+  width: fit-content;
+}
+.promo-article-title {
+  margin-bottom: 50px;
+  font-size: 53px;
+}
+.promo-article-photo {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 45%;
+  background-image: url(../img/promoArticle.png);
+  margin-bottom: 50px;
+}
+.promo-article-text {
+  line-height: 35px;
+  margin-bottom: 50px;
+}
+.promo-article-inner-Title {
+  margin-bottom: 20px;
+}
+
+/* Etap VI - O mnie */
+
+.about-me {
+  max-width: 980px;
+  margin: 80px auto;
+}
+.about-me img {
+  margin: 0 auto;
+  width: fit-content;
+  display: block;
+}
+.about-me-photo {
+  width: 26%;
+  padding-bottom: 29%;
+  background-image: url(../img/kowal2.png);
+  margin: 100px auto 30px auto;
+  
+}
+
+.about-me p {
+  font-family: 'Poppins', sans-serif;
+}
+p.about-me-photo-description {
+  width: fit-content;
+  margin: 50px auto;
+  font-size: 25px;
+}
+p.about-me-photo-description span {
+  text-transform: uppercase;
+}
+p.about-me-title {
+  font-size: 89px;
+  width: fit-content;
+  margin: 0px auto 80px auto;
+}
+p.about-me-content {
+  font-size: 19px;
+  line-height: 35px;
+}
+p.about-me-signature {
+  font-size: 19px;
+  float: right;
+  width: fit-content;
+  margin-right: 20%;
+  margin-top: 4%;
+}
+
+/* Etap VII - Galeria */
+
+.gallery {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+.gallery-main-photo {
+  position: relative;
+  width: 32%;
+  padding-bottom: 36%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  background-image: url(../img/galleryCover.png);
+}
+.gallery-main-photo p {
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  left: 35%;
+  top: 40%;
+  font-size: 46px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+.main-gallery-photo-description {
+  display: none;
+}
+.gallery-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(63,74,82, 0.6);
+}
+.gallery-cover img {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.gallery-main-photo:hover .main-gallery-photo-description {
+  display: block;
+}
+.gallery-main-photo:hover .gallery-cover{
+  display: none;
+}
+
+/* Etap VIII - stopka */
+footer {
+  overflow: hidden;
+  background-image: url(../img/mainBG.png);
+  color: #fff;
+  padding-bottom: 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form {
+  max-width: 580px;
+  margin: 120px auto 50px auto;
+}
+form input {
+  width: 47%;
+  background: transparent;
+  border: none;
+  margin-right: 2%;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2%;
+  margin-bottom: 10%;
+  color: #ffffff;
+  font-size: 19px;
+}
+
+form input::placeholder {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+}
+input.form-content {
+    width: 100%;
+}
+.form-button {
+	background-color:#666666;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 19px;
+	padding:16px 31px;
+	text-decoration:none;
+  text-transform: uppercase;
+}
+.contact-and-social-media {
+  max-width: 650px;
+  margin: 80px auto;
+}
+.contact-and-social-media a {
+  width: 70px;
+  height: 70px;
+  border: 1px solid white;
+  display: block;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  margin-right: 50px;
+}
+.e-mail {
+  width: fit-content;
+  float: left;
+  margin-right: 50px;
+}
+.e-mail p {
+  font-family: 'Myriad Pro', sans-serif;
+  margin-top: 90px;
+  font-size: 16px;
+}
+.e-mail a {
+  background-image: url(../img/mailIcons.png);
+  margin: 0 0 0 74px;
+  display: block;
+}
+.facebook {
+  background-image: url(../img/face.png);
+}
+.twitter {
+  background-image: url(../img/twitter.png);
+}
+.gplus {
+  background-image: url(../img/gplus.png);
+}
