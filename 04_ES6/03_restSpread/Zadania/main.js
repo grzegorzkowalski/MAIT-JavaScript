@@ -1,3 +1,27 @@
+// Zadanie 2
+
+const getAverage = (...params) => {
+    //const sum = params.reduce((prev, cur) => prev + cur);
+    let sum = 0;
+    //params.forEach(el => sum += el);
+    for (let i = 0; i < params.length ; i++) {
+        sum = sum + params[i];
+    }
+    console.log(params, sum);
+
+    return sum/params.length;
+}
+
+getAverage(2, 4, 5, 6, 7, 79);
+
+//Zadanie 3
+
+const myName = "Grzegorz";
+const nameChars = [...myName];
+const nameChars2 = myName.split("");
+console.log(nameChars);
+console.log(nameChars2);
+
 //Zadanie 5
 
 const state = {
