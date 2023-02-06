@@ -277,7 +277,7 @@ header {
   padding-bottom: 29%;
   background-image: url(../img/kowal2.png);
   margin: 100px auto 30px auto;
-  
+
 }
 
 .about-me p {
@@ -447,4 +447,8 @@ input.form-content {
 }
 .gplus {
   background-image: url(../img/gplus.png);
+}
+
+.hide {
+  display: none;
 }
