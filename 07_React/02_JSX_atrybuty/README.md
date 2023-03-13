@@ -15,11 +15,15 @@ Pamiętaj o zamknięciu tagu `img`.
 
 
 
-Wykorzystaj funkcję `randomNumber()`, która generuje pseudolosowe liczby z zakresu 1-10. Za jej pomocą wygeneruj liczbę A i liczbę B.
+Wykorzystaj funkcję `randomNumber()`, która generuje pseudolosowe liczby z zakresu 1-10. 
+Za jej pomocą wygeneruj liczbę A i liczbę B.
 
-Następnie za pomocą funkcji `prompt()` zapytaj użytkownika, jaki jest wynik dodawania tych dwóch liczb. **Wyświetl w komunikacie prompt-a obie liczby żeby użytkownik miał szansę je zobaczyć.**
+Następnie za pomocą funkcji `prompt()` zapytaj użytkownika, jaki jest wynik dodawania tych dwóch liczb. 
+**Wyświetl w komunikacie prompt-a obie liczby żeby użytkownik miał szansę je zobaczyć.**
 
-Następnie w elemencie o klasie `App` wyrenderuj element `div`. Jeżeli odpowiedź użytkownika była poprawna, w nowo utworzonym elemencie `div` wyświetl informację `Odpowiedź poprawna` i ustaw styl tła na **zielony**. Jeżeli odpowiedź była niepoprawna, to element `div` ma zawierać informację `Odpowiedź błędna` oraz ma mieć styl tła **czerwony**.
+Następnie w elemencie o klasie `App` wyrenderuj element `div`. Jeżeli odpowiedź użytkownika była poprawna, 
+w nowo utworzonym elemencie `div` wyświetl informację `Odpowiedź poprawna` i ustaw styl tła na **zielony**. 
+Jeżeli odpowiedź była niepoprawna, to element `div` ma zawierać informację `Odpowiedź błędna` oraz ma mieć styl tła **czerwony**.
 
 ```
 const randomNumber = () => {
