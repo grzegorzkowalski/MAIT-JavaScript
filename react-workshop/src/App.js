@@ -1,38 +1,18 @@
-import Menu from "./components/Chapter04/Menu";
-import Search from "./components/Chapter04/Search";
+import AddNumbers from "./components/Chapter05/AddNumbers";
+import Sum from "./components/Chapter05/Sum";
 import LikeBox from "./components/Chapter04/LikeBox";
-import Hello from "./components/Chapter05/Hello";
 import './App.css';
-import CurrencyConverter from "./components/Chapter05/CurrencyConverter";
+import Menu from "./components/Chapter04/Menu";
+import menuData from "./data/menu";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/*<Menu />*/}
-        {/*<Search />*/}
-        {/*<LikeBox />*/}
-        {/*<Hello name="Grzegorz" surname="Kowalski" />*/}
-        {/*<Hello name="Szogi" surname="Kowalski" />*/}
-        {/*<Hello name="Orzech" surname="Stefanowski" />*/}
-        <CurrencyConverter
-            from="EUR"
-            to="USD"
-            value={200}
-            rate={1.12275}
-        />
-          <CurrencyConverter
-              from="PLN"
-              to="EUR"
-              value={200}
-              rate={0.22}
-          />
-          <CurrencyConverter
-              from="KAT"
-              to="PLN"
-              value={200}
-              rate={10}
-          />
+        <AddNumbers numberA={3} numberB={7} />
+        <Sum numbers={[1,2,3,4,5]} />
+        <LikeBox likes={10000} />
+        <Menu menu={menuData} />
       </header>
     </div>
   );
