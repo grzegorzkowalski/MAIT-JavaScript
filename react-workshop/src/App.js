@@ -1,8 +1,10 @@
 import ParentComponent from "./components/Chapter06/ParentComponent";
 import ChildComponent from "./components/Chapter06/ChildComponent";
 import GrandchildComponent from "./components/Chapter06/GrandchildComponent";
-import './App.css';
 import ShopItem from "./components/Chapter06/ShopItem";
+import ShopList from "./components/Chapter06/ShopList";
+import stuffList from "./data/stuffList";
+import './App.css';
 
 const shopItemElement = {
     title: "MacBook Pro",
@@ -21,6 +23,7 @@ function App() {
             </ChildComponent>
         </ParentComponent>
         <ShopItem item={shopItemElement} />
+        <ShopList list={stuffList} />
       </header>
     </div>
   );
