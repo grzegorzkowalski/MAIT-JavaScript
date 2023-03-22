@@ -5,6 +5,7 @@ import ShopItem from "./components/Chapter06/ShopItem";
 import ShopList from "./components/Chapter06/ShopList";
 import stuffList from "./data/stuffList";
 import './App.css';
+import HelloWorld from "./components/Chapter07/HelloWorld";
 
 const shopItemElement = {
     title: "MacBook Pro",
@@ -17,13 +18,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ParentComponent>
-            <ChildComponent>
-                 <GrandchildComponent />
-            </ChildComponent>
-        </ParentComponent>
-        <ShopItem item={shopItemElement} />
-        <ShopList list={stuffList} />
+        {/*<ParentComponent>*/}
+        {/*    <ChildComponent>*/}
+        {/*         <GrandchildComponent />*/}
+        {/*    </ChildComponent>*/}
+        {/*</ParentComponent>*/}
+        {/*<ShopItem item={shopItemElement} />*/}
+        {/*<ShopList list={stuffList} />*/}
+        <HelloWorld />
       </header>
     </div>
   );
