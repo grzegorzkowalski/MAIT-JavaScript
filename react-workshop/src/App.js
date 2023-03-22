@@ -6,6 +6,8 @@ import ShopList from "./components/Chapter06/ShopList";
 import stuffList from "./data/stuffList";
 import './App.css';
 import HelloWorld from "./components/Chapter07/HelloWorld";
+import Modal from "./components/Chapter07/Modal";
+import Box from "./components/Chapter07/Box";
 
 const shopItemElement = {
     title: "MacBook Pro",
@@ -26,6 +28,8 @@ function App() {
         {/*<ShopItem item={shopItemElement} />*/}
         {/*<ShopList list={stuffList} />*/}
         <HelloWorld />
+        <Modal heading="Zapisz się do newslettera" />
+        <Box />
       </header>
     </div>
   );
