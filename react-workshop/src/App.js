@@ -8,6 +8,8 @@ import './App.css';
 import HelloWorld from "./components/Chapter07/HelloWorld";
 import Modal from "./components/Chapter07/Modal";
 import Box from "./components/Chapter07/Box";
+import Buttons from "./components/Chapter08/Buttons";
+import ShowUserFunc from "./components/Chapter08/ShowUserFunc";
 
 const shopItemElement = {
     title: "MacBook Pro",
@@ -27,9 +29,11 @@ function App() {
         {/*</ParentComponent>*/}
         {/*<ShopItem item={shopItemElement} />*/}
         {/*<ShopList list={stuffList} />*/}
-        <HelloWorld />
-        <Modal heading="Zapisz się do newslettera" />
-        <Box />
+        {/*<HelloWorld />*/}
+        {/*<Modal heading="Zapisz się do newslettera" />*/}
+        {/*<Box />*/}
+        <Buttons />
+        <ShowUserFunc name="Grzegorz" surname="Kowalski" />
       </header>
     </div>
   );
