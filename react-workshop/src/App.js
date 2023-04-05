@@ -10,6 +10,10 @@ import Modal from "./components/Chapter07/Modal";
 import Box from "./components/Chapter07/Box";
 import Buttons from "./components/Chapter08/Buttons";
 import ShowUserFunc from "./components/Chapter08/ShowUserFunc";
+import HoverEvent from "./components/Chapter08/HoverEvent";
+import EventsTest from "./components/Chapter08/EventsTest";
+import CountThings from "./components/Chapter08/CountThings";
+import TextTyper from "./components/Chapter08/TextTyper";
 
 const shopItemElement = {
     title: "MacBook Pro",
@@ -34,6 +38,11 @@ function App() {
         {/*<Box />*/}
         <Buttons />
         <ShowUserFunc name="Grzegorz" surname="Kowalski" />
+        <HoverEvent />
+        <EventsTest />
+          {/*Od Zadania 7 startujemy*/}
+        <CountThings />
+        <TextTyper text="Witaj!" />
       </header>
     </div>
   );
