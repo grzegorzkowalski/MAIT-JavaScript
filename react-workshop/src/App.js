@@ -14,6 +14,10 @@ import HoverEvent from "./components/Chapter08/HoverEvent";
 import EventsTest from "./components/Chapter08/EventsTest";
 import CountThings from "./components/Chapter08/CountThings";
 import TextTyper from "./components/Chapter08/TextTyper";
+import ToDoList from "./components/Chapter08/ToDoList";
+import RandomNumbers from "./components/Chapter08/RandomNumbers";
+import ColorfulBoxes from "./components/Chapter08/ColorfulBoxes";
+import CrazyDiv from "./components/Chapter08/CrazyDiv";
 
 const shopItemElement = {
     title: "MacBook Pro",
@@ -43,6 +47,10 @@ function App() {
           {/*Od Zadania 7 startujemy*/}
         <CountThings />
         <TextTyper text="Witaj!" />
+        <ToDoList />
+        <RandomNumbers />
+        <ColorfulBoxes />
+        <CrazyDiv />
       </header>
     </div>
   );
