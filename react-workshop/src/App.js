@@ -18,6 +18,8 @@ import ToDoList from "./components/Chapter08/ToDoList";
 import RandomNumbers from "./components/Chapter08/RandomNumbers";
 import ColorfulBoxes from "./components/Chapter08/ColorfulBoxes";
 import CrazyDiv from "./components/Chapter08/CrazyDiv";
+import ButtonCounter from "./components/Chapter09/ButtonCounter";
+import Shop from "./components/Chapter09/Shop";
 
 const shopItemElement = {
     title: "MacBook Pro",
@@ -40,17 +42,19 @@ function App() {
         {/*<HelloWorld />*/}
         {/*<Modal heading="Zapisz się do newslettera" />*/}
         {/*<Box />*/}
-        <Buttons />
-        <ShowUserFunc name="Grzegorz" surname="Kowalski" />
-        <HoverEvent />
-        <EventsTest />
-          {/*Od Zadania 7 startujemy*/}
-        <CountThings />
-        <TextTyper text="Witaj!" />
-        <ToDoList />
-        <RandomNumbers />
-        <ColorfulBoxes />
-        <CrazyDiv />
+        {/*<Buttons />*/}
+        {/*<ShowUserFunc name="Grzegorz" surname="Kowalski" />*/}
+        {/*<HoverEvent />*/}
+        {/*<EventsTest />*/}
+        {/*  /!*Od Zadania 7 startujemy*!/*/}
+        {/*<CountThings />*/}
+        {/*<TextTyper text="Witaj!" />*/}
+        {/*<ToDoList />*/}
+        {/*<RandomNumbers />*/}
+        {/*/!*<ColorfulBoxes />*!/*/}
+        {/*<CrazyDiv />*/}
+        {/*<ButtonCounter />*/}
+        <Shop />
       </header>
     </div>
   );

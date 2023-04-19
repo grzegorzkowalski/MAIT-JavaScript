@@ -17,7 +17,7 @@ const CrazyDiv = () => {
 
     return (
         <div
-            onMouseEnter={() => handleHover(0, 600)}
+            onMouseEnter={() => handleHover(0, 1000)}
             style={{
             width: "200px",
             height: "200px",
