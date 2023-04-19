@@ -20,6 +20,7 @@ import ColorfulBoxes from "./components/Chapter08/ColorfulBoxes";
 import CrazyDiv from "./components/Chapter08/CrazyDiv";
 import ButtonCounter from "./components/Chapter09/ButtonCounter";
 import Shop from "./components/Chapter09/Shop";
+import TodoApp from "./components/Chapter09/TodoApp";
 
 const shopItemElement = {
     title: "MacBook Pro",
@@ -54,7 +55,8 @@ function App() {
         {/*/!*<ColorfulBoxes />*!/*/}
         {/*<CrazyDiv />*/}
         {/*<ButtonCounter />*/}
-        <Shop />
+        {/*<Shop />*/}
+        <TodoApp />
       </header>
     </div>
   );
