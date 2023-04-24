@@ -23,6 +23,8 @@ import Shop from "./components/Chapter09/Shop";
 import TodoApp from "./components/Chapter09/TodoApp";
 import MyButton from "./components/Chapter10/MyButton";
 import NumberRandomInfo from "./components/Chapter10/NumberRandomInfo";
+import NumberInfo from "./components/Chapter10/NumberInfo";
+import SecretStuff from "./components/Chapter10/SecretStuff";
 
 const shopItemElement = {
     title: "MacBook Pro",
@@ -59,8 +61,24 @@ function App() {
         {/*<ButtonCounter />*/}
         {/*<Shop />*/}
         {/*<TodoApp />*/}
-        <MyButton />
-        <NumberRandomInfo />
+        {/*<MyButton />*/}
+        {/*<NumberRandomInfo />*/}
+        {/*<NumberInfo number={1} />*/}
+        {/*<NumberInfo number={2} />*/}
+        {/*<NumberInfo number={5} />*/}
+        {/*<NumberInfo number={6} />*/}
+        {/*<NumberInfo number={10} />*/}
+        {/*<NumberInfo number={16} />*/}
+        <SecretStuff
+            password="Test1234"
+            correctPassword="Test1234"
+            secret="Lubię pizzę."
+        />
+        <SecretStuff
+          password="Test1234"
+          correctPassword="Test"
+          secret="Lubię ziemniaczki."
+        />
       </header>
     </div>
   );
