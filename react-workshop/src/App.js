@@ -21,6 +21,8 @@ import CrazyDiv from "./components/Chapter08/CrazyDiv";
 import ButtonCounter from "./components/Chapter09/ButtonCounter";
 import Shop from "./components/Chapter09/Shop";
 import TodoApp from "./components/Chapter09/TodoApp";
+import MyButton from "./components/Chapter10/MyButton";
+import NumberRandomInfo from "./components/Chapter10/NumberRandomInfo";
 
 const shopItemElement = {
     title: "MacBook Pro",
@@ -56,7 +58,9 @@ function App() {
         {/*<CrazyDiv />*/}
         {/*<ButtonCounter />*/}
         {/*<Shop />*/}
-        <TodoApp />
+        {/*<TodoApp />*/}
+        <MyButton />
+        <NumberRandomInfo />
       </header>
     </div>
   );
