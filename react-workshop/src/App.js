@@ -1,6 +1,7 @@
 import Hello from "./components/Chapter11/Hello";
 import './App.css';
 import CarList from "./components/Chapter11/CarList";
+import AddTwoNumbers from "./components/Chapter11/AddTwoNumbers";
 
 const shopItemElement = {
     title: "MacBook Pro",
@@ -14,7 +15,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/*<Hello />*/}
-        <CarList />
+        {/*<CarList />*/}
+        <AddTwoNumbers />
       </header>
     </div>
   );
