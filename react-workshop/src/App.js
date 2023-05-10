@@ -17,6 +17,10 @@ function App() {
         {/*<Hello />*/}
         {/*<CarList />*/}
         <AddTwoNumbers />
+        {/*//Do zrobienia ostatnie zadanie z Formularzy i zadania z Fetch*/}
+        {/*  fetch("https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699")*/}
+        {/*  .then(res => res.json())*/}
+        {/*  .then(res2 => console.log(res2));*/}
       </header>
     </div>
   );
