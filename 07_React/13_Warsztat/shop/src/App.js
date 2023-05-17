@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import './App.css';
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 import Product from "./pages/Product";
@@ -8,6 +7,7 @@ import {Container} from "react-bootstrap";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 const router = createBrowserRouter([
   {
@@ -16,11 +16,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />
   },
   {
-    path: "/product/:id",
-    element: <Product />
-  },
-  {
-    path: "/summary",
+    path: "/summary/:price",
     element: <Summary />
   },
 ]);

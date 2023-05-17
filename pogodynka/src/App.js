@@ -1,11 +1,10 @@
-import './App.css';
+import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import CityWeather from "./pages/CityWeather";
 import FindWeather from "./pages/FindWeather";
 import ErrorPage from "./pages/ErrorPage";
-import React from "react";
-
+import './App.css';
 
 const router = createBrowserRouter([
     {

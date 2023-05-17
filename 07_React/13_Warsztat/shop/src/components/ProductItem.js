@@ -1,17 +1,23 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-const ProductItem = () => {
+const ProductItem = ({data, addToBasket}) => {
+    console.log(data);
+    const clickHandler = (e) => {
+        e.preventDefault();
+        if (typeof addToBasket === "function") {
+            addToBasket(prev => [...prev, data]);
+        }
+    }
     return (
         <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="https://cdn.shopify.com/s/files/1/0657/7923/7091/products/WP08110_1_1200x1200_crop_center.webp?v=1664270222" />
+            <Card.Img variant="top" src={data.thumb} />
             <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>{data.title}</Card.Title>
                 <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    Cena: {data.price} zł
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="primary" onClick={clickHandler}>Dodaj do koszyka</Button>
             </Card.Body>
         </Card>
     );
