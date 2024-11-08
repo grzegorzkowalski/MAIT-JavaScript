@@ -1,8 +1,5 @@
 ## Zadanie 1
 
-
-
-
 Stwórz dwie tablice ```namesA``` i ```namesB```. Pierwsza niech zawiera same stringi.
 Druga niech zawiera dwa dowolne stringi, a od trzeciego miejsca te same elementy co tablica ```namesA```. Ostatnie dwa elementy tablicy ```namesB``` to niech będą "Jan" i  "Karol".
 
@@ -13,12 +10,7 @@ Przykład:
 ["Ala", "Puszek", "Zosia", "Marcin", "Kamil", "Jan", "Karol" ] // Tablica 2
 ```
 
-
-
 ## Zadanie 2
-
-
-
 
 Stwórz funkcję o nazwie ```getAverage```, która może przyjąć dowolną liczbę parametrów (w postaci liczb) i która zwraca średnią arytmetyczną tych liczb.
 
@@ -31,8 +23,6 @@ getAverage(2, 4, 5, 6, 7, 79);
 
 
 ## Zadanie 3
-
-
 
 Stwórz zmienną przechowującą Twoje imię. Za pomocą **operatora rozproszenia** zapisz każdą literkę do tablicy.
 Wypisz tablicę w konsoli.

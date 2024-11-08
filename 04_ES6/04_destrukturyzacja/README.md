@@ -1,16 +1,10 @@
 ## Zadanie 1
 
-
-
-
 Podstaw pod zmienne pierwszą i ostatnią wartość następującej tablicy: ```[ "snow", "rain", "sun" ]```. Wypisz zmienne w konsoli.
 
 
 
 ## Zadanie 2
-
-
-
 
 Stwórz obiekt ```slider```, taki jak poniżej:
 
@@ -26,10 +20,7 @@ const slider = {
 Podstaw do zmiennych ```type``` oraz ```autoStart``` odpowiednie wartości z obiektu ```slider```.
 
 
-
 ## Zadanie 3
-
-
 
 
 Stwórz tablicę z 3 imionami. Następnie każde imię przypisz do kolejnej zmiennej np. `name1`, `name2`, `name3`. Wykorzystaj destrukturyzację.
@@ -38,19 +29,12 @@ Stwórz tablicę z 3 imionami. Następnie każde imię przypisz do kolejnej zmie
 
 ## Zadanie 4
 
-
-
-
 Stwórz funkcję ```generateRandomNumbers()```, której zadaniem jest wylosowanie i zapisanie do tablicy 6 liczb (0-5) oraz zwrócenie tej tablicy.
 
 Zapisz do zmiennych pierwszą i trzecią liczbę ze zwróconej tablicy. Wyświetl te zmienne w konsoli.
 
 
-
 ## Zadanie 5
-
-
-
 
 Stwórz funkcję ```showAnimal()```, która przyjmie obiekt:
 
