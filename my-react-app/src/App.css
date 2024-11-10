@@ -40,3 +40,30 @@
 .read-the-docs {
   color: #888;
 }
+
+.person {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  width: 650px;
+  background: #efefef;
+  border: 2px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.person img {
+  width: 64px;
+  height: auto;
+}
+
+.person h1,
+.person p {
+  margin: 0;
+}
+
+.person .info {
+  padding-left: 15px;
+}

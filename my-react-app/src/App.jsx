@@ -1,3 +1,4 @@
+import Search from "./components/04_Chapter/Search";
 import './App.css';
 import people from "./data/people";
 
@@ -27,8 +28,22 @@ function App() {
       {/*<img src={imageUrl} alt="car" />*/}
       {borderColor ? <div style={styles} /> : <div>Niepoprawny kolor</div>}
       {
-        people.map((el) => <div key={el.id}><h3>{el.name} {el.surname}</h3></div>)
+        people.map((el) => {
+          return (
+              <div
+                  className="person"
+                  key={el.id}
+              >
+                <img src={el.avatar} />
+                <div className="info">
+                  <h1>{el.title} {el.name} {el.surname}</h1>
+                  <p>{el.bio}</p>
+                </div>
+              </div>
+          )
+        })
       }
+      <Search />
     </>
   )
 }
