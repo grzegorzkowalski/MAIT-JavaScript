@@ -1,6 +1,7 @@
 import Search from "./components/04_Chapter/Search";
 import './App.css';
 import people from "./data/people";
+import Hello from "./components/05_Chapter/Hello.jsx";
 
 function App() {
   //const num1 = parseInt(prompt("Podaj pierwszą liczbę?"));
@@ -44,6 +45,7 @@ function App() {
         })
       }
       <Search />
+      <Hello name="Grzegorz" surname="Kowalski" age={38} occupation="programmer" />
     </>
   )
 }
