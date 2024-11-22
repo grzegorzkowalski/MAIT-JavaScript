@@ -1,11 +1,12 @@
 import Search from "./components/04_Chapter/Search";
-import './App.css';
 import people from "./data/people";
 import Hello from "./components/05_Chapter/Hello";
 import item from "./data/item";
 import ShopItem from "./components/06_Chapter/ShopItem.jsx";
 import ShopList from "./components/06_Chapter/ShopList.jsx";
-import HelloWorld from "./components/07_Chapter/HelloWorld.jsx";
+import HelloWorld from "./components/07_Chapter/HelloWorld";
+import Box from "./components/07_Chapter/Box";
+import './App.css';
 
 function App() {
   //const num1 = parseInt(prompt("Podaj pierwszą liczbę?"));
@@ -58,6 +59,7 @@ function App() {
       {/*<ShopItem item={item} />*/}
       {/*<ShopList />*/}
         <HelloWorld />
+        <Box />
     </>
   )
 }
