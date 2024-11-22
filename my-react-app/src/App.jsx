@@ -6,6 +6,7 @@ import ShopItem from "./components/06_Chapter/ShopItem.jsx";
 import ShopList from "./components/06_Chapter/ShopList.jsx";
 import HelloWorld from "./components/07_Chapter/HelloWorld";
 import Box from "./components/07_Chapter/Box";
+import Modal from "./components/07_Chapter/Modal";
 import './App.css';
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
       {/*<ShopList />*/}
         <HelloWorld />
         <Box />
+        <Modal heading="Testowy nagłowek" />
     </>
   )
 }
