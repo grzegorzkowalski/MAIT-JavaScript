@@ -59,3 +59,14 @@ console.log(headerClassList);
 // pkt. 8
 //document.querySelector(".first-article__text-title").classList.add(headerClassList);
 document.querySelector(".first-article__text-title").className += " " + headerClassList;
+
+//Zadanie 4
+
+const menuElement = document.createElement("li");
+const menuElementLink = document.createElement("a");
+menuElementLink.innerText = "oferta";
+menuElementLink.setAttribute("href", "#oferta");
+menuElement.append(menuElementLink);
+const menu = document.querySelector(".navigation-menu > ul");
+menu.style.width = "70%";
+menu.append(menuElement);
