@@ -15,3 +15,8 @@ console.log(blogForm);
 // pkt. 4
 const link = document.querySelector('a[href="mailto:grzegorz@theadventurerblog.pl"]');
 console.log(link);
+
+//Zadanie 2
+
+const galleryItems = Array.from(document.querySelectorAll(".gallery-main-photo"));
+console.log(galleryItems);
