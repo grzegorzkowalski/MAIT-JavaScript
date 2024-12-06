@@ -20,7 +20,7 @@ Podczas wybierania opcji z elementu `select` (dodaj listę samochodów) ma się 
 
 ## Zadanie 3
 
-Stwórz komponent klasowy `AddTwoNumbers`.
+Stwórz komponent funkcyjny `AddTwoNumbers`.
 
 Ma renderować `form`, a w nim dwa `input type="text"` oraz `h1`. W `h1` ma się na żywo wyświetlać wynik dodawania dwóch liczb. Pobieraj je z elementów `input` pamiętając o konwersji na typ `Number`.
 
