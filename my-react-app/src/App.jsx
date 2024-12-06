@@ -7,6 +7,7 @@ import NumberInfo from "./components/10_Chapter/NumberInfo";
 import './App.css';
 import MyButton from "./components/10_Chapter/MyButton";
 import SecretStuff from "./components/10_Chapter/SecretStuff.jsx";
+import Hello from "./components/11_Chapter/Hello.jsx";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <MyButton />
       <SecretStuff secret="Lubię pizzę" password="Test1234" correctPassword="Test1234" />
       <SecretStuff secret="Lubię pizzę" password="Test" correctPassword="1234" />
+      <Hello />
     </>
   )
 }
