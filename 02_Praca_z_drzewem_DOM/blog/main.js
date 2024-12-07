@@ -70,3 +70,22 @@ menuElement.append(menuElementLink);
 const menu = document.querySelector(".navigation-menu > ul");
 menu.style.width = "70%";
 menu.append(menuElement);
+
+//Zadanie 5
+// const copyElement = document.querySelector('[href="#aboutMe"]');
+// console.log(copyElement, "copy");
+// const newElement = copyElement.cloneNode(true);
+// menu.append(newElement);
+
+const copyElement1 = menu.querySelector("li").cloneNode(true);
+const copyElement2 = menu.querySelectorAll("li")[1].cloneNode(true);
+
+console.log(copyElement1);
+console.log(copyElement2);
+
+copyElement2.querySelector("a").textContent = "podróże";
+copyElement2.querySelector("a").href = "#podroze";
+
+menu.append(copyElement1);
+menu.append(copyElement2);
+menu.style.width = "85%";
