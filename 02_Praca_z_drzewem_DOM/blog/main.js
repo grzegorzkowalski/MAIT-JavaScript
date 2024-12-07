@@ -89,3 +89,33 @@ copyElement2.querySelector("a").href = "#podroze";
 menu.append(copyElement1);
 menu.append(copyElement2);
 menu.style.width = "85%";
+
+//Zadanie 6
+
+const elToDelete = document.querySelector(".about-me-title");
+console.log(elToDelete);
+elToDelete.remove();
+
+
+// Rozdział style
+
+//Zadanie 1 - style
+
+const laos = document.querySelector(".first-article__text-title.about-blog__content-title");
+console.log(laos);
+
+laos.style.color = "pink";
+laos.style.fontSize = "50px";
+laos.style.textDecoration = "underline";
+
+//Zadanie 2
+
+blogForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    blogForm.classList.add("hide");
+    const foot = document.querySelector("footer");
+    const text = document.createElement("h2");
+    text.textContent = "Wiadomość została wysłana.";
+    foot.append(text);
+})
+
