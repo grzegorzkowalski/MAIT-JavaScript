@@ -2,11 +2,15 @@ import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import ShowWeather from "./ShowWeather.jsx";
 import {getPhoto, getWeather} from "../api/weather.js";
+import {usePhoto} from "../hooks/usePhoto.js";
 
 const CityWeather = () => {
     const [temp, setTemp] = useState('');
     const [description, setDescription] = useState('');
-    const [photo, setPhoto] = useState('');
+    //const [photo, setPhoto] = useState('');
+
+    const {photo, getPhoto} = usePhoto('');
+
     const {city} = useParams();
 
     useEffect(() => {
@@ -15,7 +19,7 @@ const CityWeather = () => {
 
     useEffect(() => {
         if (description) {
-            getPhoto(description, setPhoto);
+            getPhoto(description);
         }
     }, [description]);
 

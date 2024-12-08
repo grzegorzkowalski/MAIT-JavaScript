@@ -1,12 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import ShowWeather from "./ShowWeather.jsx";
 import {getPhoto, getWeather} from "../api/weather.js";
+import {usePhoto} from "../hooks/usePhoto.js";
 
 const FindWeather = () => {
     const [town, setTown] = useState('');
     const [temp, setTemp] = useState('');
     const [description, setDescription] = useState('');
-    const [photo, setPhoto] = useState('');
+    //const [photo, setPhoto] = useState('');
+
+    const {photo, getPhoto} = usePhoto('');
 
     const submitHandler = (e) => {
         e.preventDefault();
@@ -15,7 +18,7 @@ const FindWeather = () => {
 
     useEffect(() => {
         if (description) {
-            getPhoto(description, setPhoto);
+            getPhoto(description);
         }
     }, [description]);
 
