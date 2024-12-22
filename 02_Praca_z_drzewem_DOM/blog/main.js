@@ -119,3 +119,22 @@ blogForm.addEventListener("submit", (e) => {
     foot.append(text);
 })
 
+//Zadanie 3
+
+laos.addEventListener("mouseenter", function() {
+   console.log(this);
+       this
+           .parentElement
+           .parentElement
+           .querySelector(".first-article__photo")
+           .style.backgroundImage = "url('https://nowymarketing.pl/wp-content/uploads/2022/12/40680_l2-360x0-c-default.jpg')"
+});
+
+laos.addEventListener("mouseleave", function() {
+    this
+        .parentElement
+        .parentElement
+        .querySelector(".first-article__photo")
+        .style.backgroundImage = "url(./img/mainArticlePhoto.png)";
+})
+
